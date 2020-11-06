@@ -9,21 +9,19 @@
   <h1>Facundo Simonetta</h1>
   <p>es furro gay confurmed</p>
   
-  <iframe src="Beach Boys - Surfin Usa HD (128 kbps).mp3" allow="autoplay" style="display:none" id="iframeAudio">
-</iframe> 
-  
-<audio autoplay loop  id="playAudio">
-    <source src="Beach Boys - Surfin Usa HD (128 kbps).mp3">
+
+  <audio id="myAudio" autoplay loop>
+
+  <source src="Beach Boys - Surfin Usa HD (128 kbps).mp3" type="audio/mp3">
+  Your gay
 </audio>
   
   <script>
-     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      $('#iframeAudio').remove()
-  }
-  else {
-      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-  }
+    var x = document.getElementById("myAudio"); 
+
+
+  x.play(); 
+    
   </script>
 
 </body>
